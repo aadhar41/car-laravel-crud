@@ -25,7 +25,7 @@ class CarController extends Controller
      */
     public function create()
     {
-        //
+        return view('cars.create');
     }
 
     /**
@@ -47,7 +47,7 @@ class CarController extends Controller
      */
     public function show(Car $car)
     {
-        //
+        return view('cars.show');
     }
 
     /**

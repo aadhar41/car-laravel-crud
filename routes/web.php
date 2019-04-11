@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/cars', 'CarController@index');
+Route::get('/create', 'CarController@create');
+Route::get('/car/{carid}', 'CarController@show');
+
