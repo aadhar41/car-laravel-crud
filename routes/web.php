@@ -11,14 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/cars', 'CarController@index');
+// Route::get('/cars', 'CarController@index');
 
-Route::get('/create', 'CarController@create');
-Route::post('/create', 'CarController@store');
+// Route::get('/create', 'CarController@create');
+// Route::post('/create', 'CarController@store');
 
-Route::get('/car/{carid}', 'CarController@show');
+// Route::get('/car/{carid}', 'CarController@show');
+
+
+
+Route::resource('cars', 'CarController');
 

@@ -6,7 +6,7 @@ Create a new car
 
 @section('mainContent')
 	<h2>Create Car</h2>
-	<form class="form-horizontal" method="post" action="/create">
+	<form class="form-horizontal" method="post" action="cars">
 		@csrf
 			<fieldset>
 
