@@ -14,8 +14,8 @@ class CarController extends Controller
      */
     public function index()
     {
-        $name = 'Aadhar';
-        return view('cars.index', ['name'=>$name]);
+        $cars = Car::all();;
+        return view('cars.index', compact('cars'));
     }
 
     /**
@@ -43,7 +43,7 @@ class CarController extends Controller
 
         $car->save();
         return redirect('/create');
-        
+
     }
 
     /**
@@ -54,7 +54,8 @@ class CarController extends Controller
      */
     public function show(Car $car)
     {
-        return view('cars.show');
+        // return $car;
+        return view('cars.show', compact('car'));
     }
 
     /**

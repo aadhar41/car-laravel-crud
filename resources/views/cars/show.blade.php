@@ -1,9 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>List Car</title>
-</head>
-<body>
+@extends('layout')
+
+@section('mainContent')
 	<h1>Show Car</h1>
-</body>
-</html>
+
+	<div style="color: {{$car->color}}">
+		<table class="table table-striped">
+			<caption>Car Details</caption>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Company</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong>{{$car->name}} </strong></td>
+					<td><strong>{{$car->company}} </strong></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+	</div>
+@endsection
