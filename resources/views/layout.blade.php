@@ -7,7 +7,7 @@
 <body>
     <div class="container well">
         <h2 class="text-center" style="margin-top: 5px; padding-top: 0;">CRUD operation on MySQL using Laravel</h2>
-        <h3 class="text-center" style="margin-top: 5px; padding-top: 0;">Part 10: Final tweaks</h3>
+        <h3 class="text-center" style="margin-top: 5px; padding-top: 0;"></h3>
     </div>
 
     <div class="container">
@@ -16,7 +16,7 @@
 
     <div style="position: fixed; bottom: 10px; right: 10px; color: green;">
         <strong>
-           Aadhar gaur
+            Durgesh Sahani
         </strong>
     </div>
 </body>
